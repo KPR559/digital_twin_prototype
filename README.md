@@ -1,13 +1,13 @@
-# 🏗️ Escalator Digital Twin -- AI-Based Predictive Maintenance System
+# 🏗️ Digital Twin of an Asset -- AI-Based Predictive Maintenance System
 
 ## 📌 Overview
 
-The **Escalator Digital Twin** is an AI-powered virtual replica of an
-escalator that monitors asset health, detects anomalies, predicts
-Remaining Useful Life (RUL), and provides maintenance recommendations in
-real time.
+The **Asset Digital Twin (Prototype Demonstrated Using an Escalator Asset)** 
+is an AI-powered virtual replica of an escalator that monitors asset health, 
+detects anomalies, predicts Remaining Useful Life (RUL), and provides maintenance 
+recommendations in real time.
 
-This project demonstrates how AI + Digital Twin technology can enable
+This project demonstrates how AI + Digital Twin technology can enable 
 **predictive maintenance** instead of reactive maintenance.
 
 ------------------------------------------------------------------------
@@ -40,7 +40,7 @@ The system consists of three major components:
 
 ### 2️⃣ 3D Digital Twin (Three.js)
 
--   Real-time 3D escalator model
+-   Real-time 3D asset model
 -   Color changes based on health:
     -   🟢 Healthy
     -   🟡 Warning
@@ -63,14 +63,14 @@ Displays:
 
 ## 🧠 AI Workflow
 
-1.  Sensor data simulation\
-2.  Data preprocessing\
-3.  Anomaly detection\
-4.  Sequence buffering\
-5.  LSTM-based RUL prediction\
-6.  Stress index computation\
-7.  Health scoring\
-8.  Maintenance recommendation\
+1.  Sensor data simulation
+2.  Data preprocessing
+3.  Anomaly detection
+4.  Sequence buffering
+5.  LSTM-based RUL prediction
+6.  Stress index computation
+7.  Health scoring
+8.  Maintenance recommendation
 9.  Digital twin visualization update
 
 ------------------------------------------------------------------------
@@ -140,7 +140,7 @@ Backend runs at: http://127.0.0.1:8000
 ### Step 2: Start 3D Viewer
 
 ``` bash
-npx serve .
+live-server
 ```
 
 Runs at: http://127.0.0.1:8080
@@ -164,7 +164,7 @@ When predicted RUL reaches 0:
 
 -   Health score becomes 0
 -   Health state becomes "Critical"
--   3D escalator stops
+-   3D asset stops
 -   Maintenance priority becomes "High"
 -   Monitoring halts automatically
 
